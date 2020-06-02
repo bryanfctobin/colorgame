@@ -7,7 +7,13 @@ var messageDisplay = document.querySelector("#message");
 var resetButton = document.querySelector("#reset");
 var h1Bg = document.querySelector("h1");
 var modeButtons = document.querySelectorAll(".mode");
+var wins = document.querySelector('#wins');
+var losses = document.querySelector('#losses');
 var attempts = 3;
+var score = {
+    w: 0,
+    l:0
+}
 
 init();
 
@@ -114,6 +120,8 @@ function addEventListenerToSquares() {
     if (clickedColor === pickedColor) {
         messageDisplay.textContent = "Correct";
         resetButton.textContent = "Play again?";
+        score.w += 1;
+        wins.textContent = score.w;
         changeColors(pickedColor);
         h1Bg.style.backgroundColor = pickedColor;
     } else {
@@ -123,6 +131,8 @@ function addEventListenerToSquares() {
         if (attempts === 0) {
             breakdownSquares();
             messageDisplay.textContent = "You lose";
+            score.l += 1;
+            losses.textContent = score.l;
             resetButton.textContent = "Try again?";
             h1Bg.style.backgroundColor = pickedColor;
         }
