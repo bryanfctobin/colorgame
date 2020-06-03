@@ -1,4 +1,4 @@
-var numSquares = 12;
+var numSquares = 20;
 var colors = [];
 var pickedColor;
 var squares = document.querySelectorAll(".square");

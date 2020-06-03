@@ -10,19 +10,19 @@ body {
 
 h1 {
     color: white;
-    line-height: 1.1;
+    line-height: 1;
     font-weight: lighter;
     text-align: center;
     background-color: steelblue;
     margin: 0;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 15px 0;
     transition: background 0.5s;
 }
 
 .square {
-    width: 21%;
-    padding-bottom: 21%;
+    width: 15%;
+    padding-bottom: 15%;
     background-color: purple;
     float: left;
     margin: 1.66%;
@@ -35,7 +35,7 @@ h1 {
 
 #container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 #stripe {
